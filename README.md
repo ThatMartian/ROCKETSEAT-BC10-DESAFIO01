@@ -23,4 +23,25 @@ You have the ability to write HTML, CSS, and responsive media queries.  You also
 	- [https://html5up.net/story](https://html5up.net/story)
 	- [https://html5up.net/solid-state](https://html5up.net/solid-state)
 	- [https://html5up.net/miniport](https://html5up.net/miniport)
-	- [https://html5up.net/di
+	- [https://html5up.net/dimension](https://html5up.net/dimension)
+
+- [ ] Unzip the code and copy the site to your git repository that you just set up
+  * Note that we won't be utilizing the pre processed CSS structure, you can just ignore any folder with LESS or SASS (SCSS) in it.
+- [ ] Work on the MVP requirements listed below
+
+### Follow these steps for completing your project after your MVP is completed:
+
+- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into master (student's Repo). **Please don't merge your own pull request**
+- [ ] Add your Project Manager as a Reviewer on the Pull-request
+- [ ] PM then will count the HW as done by merging the branch back into master.
+
+## MVP Requirements
+
+- [ ] Study the code base and identify both responsive units and where media queries were used.  Take notes on anything that confuses you or interesting things you find.  Share this information in your standup meeting with your group
+- [ ] Customize the template to you 
+	- [ ] Update the title tag match your name
+	- [ ] Update the place holder content throughout the template to your information
+		* Some templates are much larger than others, you don't need to fill in every little div with information, just try to get the site representing you and your work 
+		* You can use sites like [https://www.pexels.com/](https://www.pexels.com/) for free images to fill in place holders
+		* Showcase projects you have worked on by providing some information and links to your git hub projects
+- [ ] Implement proper attribution: Attribution is required under the [creative commons license](https://html5up.net/license) 
