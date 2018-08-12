@@ -44,4 +44,14 @@ You have the ability to write HTML, CSS, and responsive media queries.  You also
 		* Some templates are much larger than others, you don't need to fill in every little div with information, just try to get the site representing you and your work 
 		* You can use sites like [https://www.pexels.com/](https://www.pexels.com/) for free images to fill in place holders
 		* Showcase projects you have worked on by providing some information and links to your git hub projects
-- [ ] Implement proper attribution: Attribution is required under the [creative commons license](https://html5up.net/license) 
+- [ ] Implement proper attribution: Attribution is required under the [creative commons license](https://html5up.net/license) that came with the website files you downloaded.  Be sure to provide attribution somewhere in the site.  The templates should already come with attribution found in most footers but double check to be sure.
+- [ ] Host your website for the world to see. Follow the instructions found here [https://pages.github.com/](https://pages.github.com/).  Once you have hosted your web page, share it for your peers to see.  This is not a small feat!
+
+## Stretch
+
+- [ ] Study the JavaScript used in your template and see if you can tweak any of the behavior to see how it works
+- [ ] Download another template and see if you can get the CSS preprocessor working on the project
+
+
+My portfolio web-page demo
+![screenshot](https://raw.githubusercontent.com/SamirPaul1/Portfolio-Blog/main/Screenshot_2021-05-17%20%F0%9D%90%92%F0%9D%90%80%F0%9D%90%8C%F0%9D%90%88%F0%9D%90%91%20%F0%9D%90%8F%F0%9D%90%80%F0%9D%90%94%F0%9D%90%8B.png)
