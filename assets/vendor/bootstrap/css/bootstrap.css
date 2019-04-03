@@ -3740,4 +3740,55 @@ input[type="button"].btn-block {
 .input-group > .input-group-prepend > .btn,
 .input-group > .input-group-prepend > .input-group-text,
 .input-group:not(.has-validation) > .input-group-append:not(:last-child) > .btn,
-.input-group:not(.has-validation) > .input-group-append:not(:last
+.input-group:not(.has-validation) > .input-group-append:not(:last-child) > .input-group-text,
+.input-group.has-validation > .input-group-append:nth-last-child(n + 3) > .btn,
+.input-group.has-validation > .input-group-append:nth-last-child(n + 3) > .input-group-text,
+.input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group > .input-group-append > .btn,
+.input-group > .input-group-append > .input-group-text,
+.input-group > .input-group-prepend:not(:first-child) > .btn,
+.input-group > .input-group-prepend:not(:first-child) > .input-group-text,
+.input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+.input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.custom-control {
+  position: relative;
+  z-index: 1;
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5rem;
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact;
+}
+
+.custom-control-inline {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 1rem;
+}
+
+.custom-control-input {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 1rem;
+  height: 1.25rem;
+  opacity: 0;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #007bff;
+  background-color: #007bff;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0.2rem rgba
