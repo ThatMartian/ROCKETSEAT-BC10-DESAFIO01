@@ -2781,4 +2781,81 @@
 		this._time += this.read() % timeout - elapsed;
 
 		this._timeout = timeout;
-		this._call = window.setTimeout($.proxy(this._next, this, speed), ti
+		this._call = window.setTimeout($.proxy(this._next, this, speed), timeout - elapsed);
+	};
+
+	/**
+	 * Stops the autoplay.
+	 * @public
+	 */
+	Autoplay.prototype.stop = function() {
+		if (this._core.is('rotating')) {
+			// Reset the clock.
+			this._time = 0;
+			this._paused = true;
+
+			window.clearTimeout(this._call);
+			this._core.leave('rotating');
+		}
+	};
+
+	/**
+	 * Pauses the autoplay.
+	 * @public
+	 */
+	Autoplay.prototype.pause = function() {
+		if (this._core.is('rotating') && !this._paused) {
+			// Pause the clock.
+			this._time = this.read();
+			this._paused = true;
+
+			window.clearTimeout(this._call);
+		}
+	};
+
+	/**
+	 * Destroys the plugin.
+	 */
+	Autoplay.prototype.destroy = function() {
+		var handler, property;
+
+		this.stop();
+
+		for (handler in this._handlers) {
+			this._core.$element.off(handler, this._handlers[handler]);
+		}
+		for (property in Object.getOwnPropertyNames(this)) {
+			typeof this[property] != 'function' && (this[property] = null);
+		}
+	};
+
+	$.fn.owlCarousel.Constructor.Plugins.autoplay = Autoplay;
+
+})(window.Zepto || window.jQuery, window, document);
+
+/**
+ * Navigation Plugin
+ * @version 2.3.4
+ * @author Artus Kolanowski
+ * @author David Deutsch
+ * @license The MIT License (MIT)
+ */
+;(function($, window, document, undefined) {
+	'use strict';
+
+	/**
+	 * Creates the navigation plugin.
+	 * @class The Navigation Plugin
+	 * @param {Owl} carousel - The Owl Carousel.
+	 */
+	var Navigation = function(carousel) {
+		/**
+		 * Reference to the core.
+		 * @protected
+		 * @type {Owl}
+		 */
+		this._core = carousel;
+
+		/**
+		 * Indicates whether the plugin is initialized or not.
+		 * @
